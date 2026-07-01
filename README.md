@@ -6,6 +6,24 @@
 
 **웹 브라우저에서 즉시 플레이:** [https://8081-i0kk4x5y8ohqakpridq5w-f5433698.sg1.manus.computer/](https://8081-i0kk4x5y8ohqakpridq5w-f5433698.sg1.manus.computer/)
 
+### 게임 스크린샷
+
+**시작 화면**
+
+![Snake Game Start Screen](./assets/images/screenshot-start.webp)
+
+**게임 플레이 화면**
+
+![Snake Game Gameplay](./assets/images/screenshot-gameplay.webp)
+
+### 웹에서 플레이하기
+
+아래 버튼을 클릭하여 웹 브라우저에서 바로 게임을 시작할 수 있습니다:
+
+[![Play Now](https://img.shields.io/badge/▶%20Play%20Now-00AA00?style=for-the-badge&logo=firefox&logoColor=white)](https://8081-i0kk4x5y8ohqakpridq5w-f5433698.sg1.manus.computer/)
+
+> 💡 **팁**: 모바일 기기에서도 웹 브라우저를 통해 플레이할 수 있습니다. 스와이프 제스처로 뱀을 조종하세요!
+
 ## ✨ 주요 기능
 
 ### 게임 플레이
@@ -266,6 +284,39 @@ snake-game/
 
 ---
 
+## 🎬 게임 플레이 방법
+
+### 웹 브라우저에서 플레이
+
+1. [라이브 데모 링크](https://8081-i0kk4x5y8ohqakpridq5w-f5433698.sg1.manus.computer/)를 클릭하세요
+2. 난이도를 선택합니다 (쉬움/보통/어려움)
+3. "게임 시작" 버튼을 클릭합니다
+4. 스와이프 또는 D-pad 버튼으로 뱀을 조종합니다
+5. 빨간 음식을 먹어서 점수를 올립니다
+6. 벽이나 자신의 몸과 충돌하지 않도록 주의합니다
+
+### 모바일 앱으로 플레이
+
+**iOS:**
+```bash
+npm run ios
+```
+
+**Android:**
+```bash
+npm run android
+```
+
+**Expo Go 앱:**
+```bash
+npm run qr
+# QR 코드를 Expo Go 앱으로 스캔
+```
+
+---
+
 **즐거운 게임 되세요! 🎮**
 
 마지막 업데이트: 2026년 7월 1일
+
+**웹 데모:** https://8081-i0kk4x5y8ohqakpridq5w-f5433698.sg1.manus.computer/
