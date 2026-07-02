@@ -4,7 +4,7 @@ import {
   Text,
   Pressable,
   StyleSheet,
-  Dimensions,
+  useWindowDimensions,
   GestureResponderEvent,
   Platform,
   StatusBar,
@@ -15,10 +15,6 @@ import { ScreenContainer } from "@/components/screen-container";
 import { GameBoard } from "@/components/game-board";
 import { DirectionPad } from "@/components/direction-pad";
 import { useSnakeGame, Direction, Difficulty } from "@/hooks/use-snake-game";
-
-const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = Dimensions.get("window");
-// Board size: fits within screen width with padding, max 360
-const BOARD_SIZE = Math.min(SCREEN_WIDTH - 16, Math.min(SCREEN_HEIGHT * 0.44, 360));
 
 const DIFFICULTY_LABELS: Record<Difficulty, string> = {
   EASY: "쉬움",
@@ -34,6 +30,10 @@ const DIFFICULTY_COLORS: Record<Difficulty, string> = {
 
 export default function GameScreen() {
   useKeepAwake();
+
+  const { width: SCREEN_WIDTH, height: SCREEN_HEIGHT } = useWindowDimensions();
+  // Board size: fits within screen width with padding, max 360
+  const BOARD_SIZE = Math.min(SCREEN_WIDTH - 16, Math.min(SCREEN_HEIGHT * 0.44, 360));
 
   const {
     snake,
